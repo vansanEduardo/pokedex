@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="img/favicon.ico" rel="icon" type="image/x-icon">
+    <title>Pokedex</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <script src="./js/script.js" defer></script>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h2>Pokedex</h2>
+      </header>
+
+      <div class="pokedex">
+        <div class="back">
+          <div class="pokedeximg">
+            <img src="./img/poke.png" alt="pokedex" />
+          </div>
+          <div class="pokedeximg2">
+            <img src="./img/pokedex2.png" alt="pokedex telas menores">
+          </div>
+        </div>
+
+        <div class="pokemonimg">
+          <img
+            src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/1.g"
+            alt=""
+          />
+        </div>
+        
+        <div class="details">
+          <h2>Rayquaza</h2>
+        </div>
+        <div id="id">
+          <h2>384</h2>
+        </div>
+        <div class="btns">
+          <button id="btnLeft"><i class="fa-solid fa-arrow-left"></i></button>
+          <button id="btnRight">
+            <i class="fa-solid fa-arrow-right"></i>
+          </button>
+        </div>
+        <div class="btn-numbers">
+          <div class="numbers">
+            <button value="1">1</button>
+            <button value="2">2</button>
+            <button value="3">3</button>
+            <button value="4">4</button>
+            <button value="5">5</button>
+            <button value="6">6</button>
+            <button value="7">7</button>
+            <button value="8">8</button>
+            <button value="9">9</button>
+            <button value="0">0</button>
+          </div>
+
+          <div class="operations">
+            <button id="dell"><i class="fa-solid fa-xmark"></i></button>
+            <button id="check"><i class="fa-solid fa-check"></i></button>
+          </div>
+
+          <button id="shiny"><i class="fa-solid fa-star"></i></button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

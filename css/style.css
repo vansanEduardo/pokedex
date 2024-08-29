@@ -1,0 +1,294 @@
+@import url("https://fonts.googleapis.com/css2?family=Notable&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Press+Start+2P&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Press Start 2P";
+}
+
+body {
+  background-color: antiquewhite;
+}
+
+.container {
+  height: 100vh;
+  padding: 2rem;
+}
+
+header {
+  text-align: center;
+}
+
+.pokedex {
+  position: relative;
+  width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.pokedeximg img {
+  width: 800px;
+  margin: 0 auto;
+}
+
+.pokemonimg {
+  position: absolute;
+  top: 200px;
+  left: 99px;
+  width: 240px;
+  height: 160px;
+  background-image: url("../img/background.jpg");
+  background-size: cover;
+  position: absolute;
+  border-radius: 12px;
+  border: 1px solid #e3e3e5;
+}
+
+.pokedeximg2 {
+  display: none;
+}
+
+.pokemonimg img {
+  margin: 0.3rem auto;
+  width: 150px;
+}
+
+.details {
+  position: absolute;
+  top: 220px;
+  right: 80px;
+  width: 240px;
+  height: 80px;
+  font-size: 0.7rem;
+}
+.details h2 {
+  max-width: 220px;
+  margin: 2rem auto;
+  text-transform: capitalize;
+}
+
+#id {
+  position: absolute;
+  bottom: 70px;
+  left: 122px;
+  width: 120px;
+  height: 50px;
+}
+#id h2 {
+  margin: 0.8rem auto;
+  font-size: 1.5rem;
+}
+
+#btnRight,
+#btnLeft {
+  padding: 0.7rem 3.2rem;
+  font-size: 1rem;
+  background-color: rgb(24, 24, 24);
+  color: #fff;
+  box-shadow: -1px 5px 2px 1px rgba(24, 24, 24, 1),
+    -5px 5px 1px 0px rgba(24, 24, 24, 1);
+  transition: 0.3s;
+}
+
+#btnRight:active,
+#btnLeft:active {
+  box-shadow: none;
+  font-size: 0.8rem;
+}
+
+.btns {
+  display: flex;
+  gap: 0.7rem;
+  position: absolute;
+  top: 490px;
+  left: 480px;
+}
+
+.numbers {
+  position: absolute;
+  right: 75px;
+  top: 325px;
+  display: flex;
+  width: 240px;
+  flex-wrap: wrap;
+  box-shadow: -3px 4px 2px 1px #21c3e9;
+}
+
+.numbers button {
+  background-color: #21c3e9;
+  border: 1px solid #0c5b79;
+  padding: 0.6rem 1rem;
+}
+
+.numbers button:active {
+  transform: translateZ(-10px) scale(0.95);
+  font-size: 0.7rem;
+}
+
+.operations {
+  position: absolute;
+  right: 215px;
+  top: 425px;
+  display: flex;
+  box-shadow: -3px 4px 2px 1px #e4e4e4;
+}
+
+.operations button {
+  padding: 0.6rem 1.2rem;
+  background-color: #e3e3e3;
+  border: none;
+  border: 1px solid #cac8c8;
+}
+
+.operations button:active {
+  transform: translateZ(-10px) scale(0.95);
+  font-size: 0.7rem;
+}
+
+#shiny {
+  position: absolute;
+  left: 70px;
+  bottom: 140px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #2c2c2c;
+  box-shadow: -3px 4px 2px 1px #020003;
+  font-size: 1rem;
+  color: #fffa8a;
+}
+
+#shiny:active {
+  box-shadow: none;
+  font-size: 0.7rem;
+}
+
+/* Responsividade */
+
+@media (max-width: 800px) {
+  .pokedex{
+    width: 500px;
+  }
+  .pokedeximg {
+    display: none;
+  }
+  .pokedeximg2 {
+    display: block;
+  }
+  .pokedeximg2 img {
+    width: 450px;
+  }
+
+  .pokemonimg {
+   background-image: none;
+   border: none;
+  }
+  .pokemonimg img{
+    position: absolute;
+    left: 70px;
+  }
+  .details {
+    top: 340px;
+    left: 160px;
+  }
+ 
+
+  .numbers {
+    top: 450px;
+    left: 70px;
+  }
+  .operations {
+    top: 540px;
+    left:70px;
+    box-shadow: none;
+  }
+ 
+  #id{
+    top: 360px;
+    left: 70px;
+  }
+  #id h2{
+    font-size: 1rem;
+  }
+  .btns{
+    top: 590px;
+    left: 70px;
+  }
+ 
+  #shiny{
+    top: 580px;
+    left: 350px;
+  }
+  header{
+    margin: 1rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .pokedex{
+    width: 500px;
+  }
+  .pokedeximg {
+    display: none;
+  }
+  .pokedeximg2 {
+    display: block;
+  }
+  .pokedeximg2 img {
+    width: 350px;
+  }
+
+  .pokemonimg {
+   background-image: none;
+   border: none;
+  }
+  .pokemonimg img{
+    width: 110px;
+    position: absolute;
+    top: -50px;
+    left: 80px;
+  }
+  .details {
+    top: 270px;
+    left: 150px;
+  }
+  .details h2{
+    font-size: .8rem;
+  }
+
+  .numbers {
+    top: 340px;
+    left: 120px;
+  }
+  .operations {
+    top: 420px;
+    left:120px;
+    box-shadow: none;
+  }
+ 
+  #id{
+    top: 290px;
+    left: 100px;
+  }
+  #id h2{
+    font-size: .7rem;
+  }
+  .btns{
+    top: 460px;
+    left: 120px;
+  }
+
+  #btnRight,
+  #btnLeft{
+    padding: .5rem .7rem;
+  }
+ 
+  #shiny{
+    top: 430px;
+    left: 320px;
+  }
+  header{
+    margin: 1rem;
+  }
+}
